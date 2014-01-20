@@ -1,0 +1,236 @@
+\documentclass[12pt, a4paper,twoside]{tesi_upf}
+
+%CODIFICACIÓ
+%\usepackage[latin1]{inputenc}
+
+%DIAGRAMA DE GANTT
+\usepackage{pgfgantt}
+
+%IDIOMES
+\usepackage[catalan,english]{babel}
+
+%PER A INCLOURE GRÀFICS I EL LOGO DE LA UPF
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{acronym}
+\usepackage{multirow}
+%FONTS TIMES O GARAMOND, 
+\usepackage{times}
+%\usepackage{garamond}
+\usepackage{url}
+
+\usepackage{pdfpages}
+%SENSE HEADINGS: NO MODIFICAR
+\pagestyle{plain}
+
+%PER A L'ÍNDEX DE MATÈRIES
+\usepackage{makeidx}
+\makeindex
+
+%ESTIL DE BIBLIOGRAFIA
+%\bibliographystyle{apalike}
+
+%AQUEST DOCUMENT ÉS EN ANGLÈS
+\selectlanguage{english}
+
+%AFEGIU EN AQUESTA PART LES VOSTRES DADES
+\title{Aerial sensor platform}
+\author{Gonzalo Hermida Ruiz}
+\thyear{2014}
+\department{Departament de Tecnologies de la Informació i les Comunicacions (DTIC)}
+\supervisor{Jaume Barceló, Carles Ayesa, Luis Sanabria}
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+\cleardoublepage
+
+%%%%%% Dedicatòria; si no es vol posar, comenteu fins a final de dedicatòria
+
+\noindent To my family.
+
+\cleardoublepage
+
+%%%%%% Final de dedicatòria
+
+%%%%%% Agraïments; si no es vol posar, comenteu fins a final de agraïments
+\noindent {\Large \sffamily Acknowledgments}
+\\[12pt] 
+        
+I would like to thank to 
+\\[8pt]
+
+Also, to 
+\\[8pt]
+
+At last, 
+
+\cleardoublepage
+
+%%%%%% Final dels agraïments
+
+%ABSTRACT EN DOS IDIOMES. COM A MÍNIM CATALÀ. SI L'ALTRE ÉS EN CASTELLA CANVIEU EL QUE POSA ABSTRACT
+\selectlanguage{english}
+\section*{\Large \sffamily Abstract}
+
+This  work  addresses  the  gathering  of  data  in  areas  of  difficult  access  or  which  are potentially dangerous. Examples include high tension power lines, collapsed buildings and fire areas. We build a flying platform with the ability of carrying light sensors (e.g., small cameras or infrared cameras) and transmit the sensed data wirelessly to a control point. The platform is a highly manoeuvrable multicopter that uses the Arduino microcontroller and the multiwii software.
+
+\selectlanguage{catalan}
+\vspace*{\fill}
+\section*{\Large \sffamily  Resum}
+
+Abtracte en català
+
+\vspace*{\fill}
+
+\selectlanguage{english}
+\cleardoublepage
+%FIN DE ABSTRACTE
+
+%PREFACI OPCIONAL. SI NO ES VOL, COMENTEU FINS EL FINAL DE PREFACI
+%{\bf Prefaci}
+%
+%\cleardoublepage
+%FINAL DE PREFACI
+
+
+%TAULA DE CONTINGUTS: OBLIGATÒRIA
+\tableofcontents
+
+%INDEX DE FIGURES; NOMÉS ES POSA SI HI HA FIGURES
+\listoffigures
+%Fa que aparegui al sumari
+\addcontentsline{toc}{chapter}{List of figures}
+
+%INDEX DE TAULES; NOMÉS ES POSA SI HI HA TAULES
+\listoftables
+%Fa que aparegui al sumari
+\addcontentsline{toc}{chapter}{List of tables}
+
+%INDEX DE ACRONIMS
+\cleardoublepage
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\vspace*{1.95cm} \hspace*{-0.155cm} %,88
+\textbf{{\huge \sffamily List of Abbreviations}\\}
+\vspace*{0.5cm}         
+\begin{acronym}
+%\acro{AP}{Access Point}
+%\acro{BMX6}{BatMan-eXperimental version 6}
+%\acro{BSS}{Basic Service Set}
+\end{acronym}
+
+%COMENÇA EL TEXT
+\mainmatter
+\chapter{Introduction}
+
+
+%\\[12pt]
+
+
+%\\[12pt] 
+
+
+%\\[12pt]
+
+
+%\\[12pt]
+
+
+%\\[12pt]
+
+The streaming solution we propose, perfectly fits those networks and specially a scenario with the mobile node where we may want to share the content we are watching at that moment.  
+
+%\chapter{State of the Art}
+
+\chapter{Planning Report}
+
+The following sections explain the tasks that I will do in the course of this project.
+
+\section{Pieces adquisition}
+
+This item includes the estimate time to plan which pieces are needed, how many of each, the purchase of them and the average waiting time until them arribe. 
+
+\section{Assembling infraestructure device}
+
+This item includes the required time to assembling the device once the pieces have arribed and we have all the needed tools.
+
+\section{Software Implementation}
+
+This item includes the required time to install the software on the transmissor, the receptor and the arduino, plus the GUI for the PC.
+
+\section{Flight Tests}
+
+This item includes the required time to do the flight tests itself and the time to calibrate the device based on the results obtained on the tests and their interpretation.
+
+\section{Camera incorporation}
+
+This item includes the time needed to incorporate a camera to the device in order to take video images and transmitt it on live.
+
+\section{Device improvements}
+
+This item includes the required time to incorporate a bluetooth module to facilitate the connection between the arduino and the PC on a wireless mode, plus the incorporation of a GPS module, in order to extend the device possibilities.
+
+\section{Final report}
+
+The wording of the report is performed in parallel with the tasks that are being performed.
+
+\section{Gantt chart}
+
+\begin{figure}[ftbp]
+  \begin{center}
+
+    \begin{ganttchart}
+    [y unit title=0.4cm, 
+    y unit chart=0.5cm,
+    vgrid,hgrid,
+    title label anchor/.style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    bar/.style={fill=gray!50},
+    incomplete/.style={fill=white},
+    progress label text={},
+    bar height=0.7,
+    group right shift=0,
+    group top shift=.6,
+    group height=.3,
+    group peaks height={}{}{.1}]{1}{27}
+    
+    %labels
+    \gantttitle{2013-2014}{27} \\
+    \gantttitle{October}{3}
+    \gantttitle{November}{3} 
+    \gantttitle{December}{3}
+    \gantttitle{January}{3} 
+    \gantttitle{February}{3} 
+    \gantttitle{March}{3} 
+    \gantttitle{April}{3} 
+    \gantttitle{May}{3} 
+    \gantttitle{June}{3} \\
+    
+    %tasks
+    \ganttbar{Task 1}{2}{6} \\
+    \ganttbar{Task 2}{7}{12} \\
+    \ganttbar{Task 3}{10}{15} \\
+    \ganttbar{Task 4}{16}{24} \\
+    \ganttbar{Task 5}{19}{24} \\
+    \ganttbar{Task 6}{22}{24} \\
+    \ganttbar{Final report}{2}{26}
+
+    %relations 
+    \ganttlink{elem0}{elem1}  
+    \ganttlink{elem2}{elem3} 
+
+
+   \end{ganttchart}
+  \end{center}
+\end{figure}
+
+
+
+
+\end{document}
