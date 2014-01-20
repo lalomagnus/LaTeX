@@ -4,4 +4,4 @@ LaTeX
 My Thesis
 
 
-Hi all! Thanks for watch it! :D
+Hi everyone! Thanks for watching it! :D
