@@ -7,12 +7,16 @@
 \contentsline {chapter}{List of tables}{xiii}
 \contentsline {chapter}{List of Abbreviations}{xv}
 \contentsline {chapter}{\numberline {1}{\MakeUppercase { Introduction}}}{1}
-\contentsline {chapter}{\numberline {2}{\MakeUppercase { Planning Report}}}{3}
-\contentsline {section}{\numberline {2.1}Pieces adquisition}{3}
-\contentsline {section}{\numberline {2.2}Assembling infraestructure device}{3}
-\contentsline {section}{\numberline {2.3}Software Implementation}{3}
-\contentsline {section}{\numberline {2.4}Flight Tests}{3}
-\contentsline {section}{\numberline {2.5}Camera incorporation}{4}
-\contentsline {section}{\numberline {2.6}Device improvements}{4}
-\contentsline {section}{\numberline {2.7}Final report}{4}
-\contentsline {section}{\numberline {2.8}Gantt chart}{4}
+\contentsline {chapter}{\numberline {2}{\MakeUppercase { Mounting the device}}}{3}
+\contentsline {section}{\numberline {2.1}Mounting the arms structure}{3}
+\contentsline {section}{\numberline {2.2}Base solders}{6}
+\contentsline {section}{\numberline {2.3}Completion of mounting and connections}{8}
+\contentsline {chapter}{\numberline {3}{\MakeUppercase { Planning Report}}}{9}
+\contentsline {section}{\numberline {3.1}Pieces adquisition}{9}
+\contentsline {section}{\numberline {3.2}Assembling infraestructure device}{9}
+\contentsline {section}{\numberline {3.3}Software Implementation}{9}
+\contentsline {section}{\numberline {3.4}Flight Tests}{9}
+\contentsline {section}{\numberline {3.5}Camera incorporation}{10}
+\contentsline {section}{\numberline {3.6}Device improvements}{10}
+\contentsline {section}{\numberline {3.7}Final report}{10}
+\contentsline {section}{\numberline {3.8}Gantt chart}{10}
