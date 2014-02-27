@@ -7,16 +7,22 @@
 \contentsline {chapter}{List of tables}{xiii}
 \contentsline {chapter}{List of Abbreviations}{xv}
 \contentsline {chapter}{\numberline {1}{\MakeUppercase { Introduction}}}{1}
-\contentsline {chapter}{\numberline {2}{\MakeUppercase { Mounting the device}}}{3}
-\contentsline {section}{\numberline {2.1}Mounting the arms structure}{3}
-\contentsline {section}{\numberline {2.2}Base solders}{6}
-\contentsline {section}{\numberline {2.3}Completion of mounting and connections}{8}
-\contentsline {chapter}{\numberline {3}{\MakeUppercase { Planning Report}}}{9}
-\contentsline {section}{\numberline {3.1}Pieces adquisition}{9}
-\contentsline {section}{\numberline {3.2}Assembling infraestructure device}{9}
-\contentsline {section}{\numberline {3.3}Software Implementation}{9}
-\contentsline {section}{\numberline {3.4}Flight Tests}{9}
-\contentsline {section}{\numberline {3.5}Camera incorporation}{10}
-\contentsline {section}{\numberline {3.6}Device improvements}{10}
-\contentsline {section}{\numberline {3.7}Final report}{10}
-\contentsline {section}{\numberline {3.8}Gantt chart}{10}
+\contentsline {chapter}{\numberline {2}{\MakeUppercase { Electronic components}}}{3}
+\contentsline {section}{\numberline {2.1}Transmitter}{3}
+\contentsline {section}{\numberline {2.2}Receiver}{3}
+\contentsline {section}{\numberline {2.3}Flight Controller}{3}
+\contentsline {section}{\numberline {2.4}Electronic Speed Control}{4}
+\contentsline {section}{\numberline {2.5}Brushless motors}{4}
+\contentsline {chapter}{\numberline {3}{\MakeUppercase { Mounting the device}}}{5}
+\contentsline {section}{\numberline {3.1}Mounting the arms structure}{5}
+\contentsline {section}{\numberline {3.2}Base solders}{8}
+\contentsline {section}{\numberline {3.3}Completion of mounting and connections}{10}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase { Planning Report}}}{11}
+\contentsline {section}{\numberline {4.1}Pieces adquisition}{11}
+\contentsline {section}{\numberline {4.2}Assembling infraestructure device}{11}
+\contentsline {section}{\numberline {4.3}Software Implementation}{11}
+\contentsline {section}{\numberline {4.4}Flight Tests}{11}
+\contentsline {section}{\numberline {4.5}Camera incorporation}{12}
+\contentsline {section}{\numberline {4.6}Device improvements}{12}
+\contentsline {section}{\numberline {4.7}Final report}{12}
+\contentsline {section}{\numberline {4.8}Gantt chart}{12}
