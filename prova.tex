@@ -139,6 +139,104 @@ The Arduino integrated development environment (IDE) is a cross-platform applica
 The MultiWii is an open source software project aiming to provide the brain of a RC controlled multi rotor flying platform. It is compatible with several hardware boards and sensors and have a lot of supported features.
 \\[12pt]
 
+\chapter{Radio}
+
+\section{Spread-Spectrum Technology}
+
+The spread-spectrum techniques of modulation are methods used in telecommunication for the transmission of digital data using radio. This technology uses signals being made to be a much wider band than the information they are carrying to make them more noise-like and becoming harder to interfere with than narrow band signals and also hard to detect on narrow band equipment.
+\\[12pt]
+
+%IMAGEN DIFERENCIA
+
+The spread-spectrum transmitter transmit at a much lower spectral power density, the amount of power over a certain frequency, than narrow band transmitters, being able to occupy the same band without interfere, due to its wide.
+\\[12pt]
+
+On the receiver part, the correlation receiver effectively integrates over a very wide bandwidth to recover a spread spectrum signal and also spreads out a narrowband interferer over the receiver's total detection bandwidth.
+\\[12pt]
+
+All spread spectrum systems have a threshold or tolerance level of interference that is related to the spread-spectrum processing gain, which is essentially the ratio of the RF bandwidth to the information bandwidth.
+\\[12pt]
+
+\subsection{Spread-Spectrum Techiniques}
+
+In spread-spectrum technology the most commonly used methods are Direct Sequence (DSSS) and Frequency Hopping (FHSS). These two methods have many distinctive characteristics that result in complete different radio performances.
+\\[12pt]
+
+The carrier of the Direct Sequence radio stays at a fixed frequency. Narrowband information is spread out into a much larger bandwidth using a pseudo-random chip sequence.
+\\[12pt]
+
+%IMAGEN DSSS
+
+As can be seen in IMAGEN the narrowband signal and the spread-spectrum signal both use the same amount of transmit power and carry the same information, but the power density, the amount of power over a certain frequency, of the spread-spectrum signal is much lower.
+\\[12pt]
+
+At the receiving end of a Direct Sequence system, the spread-spectrum signal is de-spread to generate the original narrowband signal, and if there is an interference jammer in the same band it will be spread out during the de-spreading. Since the spreading factor is at least a factor of 10, the offending jammer's amplitude is greatly reduced by at least 90%.
+\\[12pt]
+
+Frequency Hopping systems achieve the same results provided by Direct Sequence systems by using different carrier frequency at different time. The FHSS system's carrier will hop around within the band so that hopefully it will avoid the jammer at some frequencies.
+\\[12pt]
+
+%IMAGEN FHSS
+
+This technique does not spread the signal; as a result, there is no processing gain. The processing gain is the increase in power density when the signal is de-spread and it will improve the received signal's Signal-to-noise ratio (SNR).
+\\[12pt]
+
+In these architectures, the receiver and the transmitter must be synchronized in time and frequency in order to ensure proper transmission and reception of signals and also needs more time to search the signal and lock to it. To make the initial synchronization possible, the frequency hopper will typically park at a fixed frequency before hopping or communication start. If the jammer happens to locate at the same frequency as the parking frequency, the hopper will not be able to hop at all. And once it hops, it will be very difficult, if not impossible to re-synchronize if the receiver ever lost the sync.
+However, the frequency hopper is better than the DSSS radio when dealing with multipath. Since the hopper does not stay at the same frequency and a null at one frequency is usually not a null at another frequency if it is not too close to the original frequency.
+\\[12pt]
+
+The hopper itself could suffer performance problems if it interferes with another radio. In these scenarios, the system that survives depends upon which can suffer more data loss.
+\\[12pt]
+
+On DSSS systems the encoding signal is used to modulate a carrier, usually by phase-shift keying at the code rate. FHSS systems generate their wide band by transmitting at different frequencies, hopping from one frequency to another according to the code sequence. Both techniques generate wideband signals controlled by the code sequence generator. For one the code is the direct carrier modulation and the other commands the carrier frequency.
+\\[12pt]
+
+There are several different modulation techniques that designers can employ when developing DSSS or FHSS. Information modulation can be accomplished using amplitude (AM) of frequency modulation (FM) techniques.
+\\[12pt]
+
+Clock modulation is another option in spread-spectrum designs, but is not used in most cases because of the loss in correlation due to phase slippage between received and local clocks.
+\\[12pt]
+
+Another modulation technique that designers can use when building a spread-spectrum system is code modification, where the code is changed in such a way that the information is embedded in it, and then modulated by phase transitions on a RF carrier.
+\\[12pt]
+
+Once the signal is coded, modulated and then sent, the receiver must demodulate the signal. This is usually done in two steps. The first step entails removing the spectrum-spreading modulation. Then, the remaining information-bearing signal is demodulated by multiplying with a local reference identical in structure and synchronized with the received signal.
+\\[12pt]
+
+Codes in a spread-spectrum system are used for:
+
+\begin{enumerate}
+	\item Protection against interference: Coding enables a bandwidth trade for processing gain against interfering signals.
+	\item Provision for privacy: Coding enables protection of signals from eaves dropping, so that even the code is secure.
+	\item Noise-effect reduction: error-detection and correction codes can reduce the effects of noise and interference.
+\end{enumerate}
+
+Maximal sequencing is one of the more popular coding methods in a spread-spectrum system. Maximal codes can be generated by a given shift register or a delay element of given length.
+A shift register generator consists of a shift register in conjunction with the appropriate logic, which feeds back a logical combination of the state of two or more of its stages to its input. The output, and its contents of its n stages at any clock time, is its function of the outputs of the stages fed back at the proceeding sample time.
+\\[12pt]
+
+Error detection and correction codes (EDAC) must be used in FHSS systems in order to overcome the high rates of error induced by partial band jamming. These codes usefulness has a threshold that must be exceeded before satisfactory performance is achieved.
+\\[12pt]
+
+In DSSS systems, EDACs may not be advisable because of the effect it has on the code, increasing the apparent data transmission rate, and may increase jamming threshold. Some demodulators can operate detecting errors at the approximately the same accuracy as an EDAC, so it may not be worthwhile to include a complex coding/decoding scheme in this system.
+\\[12pt]
+
+\subsection{Advantages}
+ 
+Spread-spectrum systems provide some clear advantages to designers.
+
+\begin{enumerate}
+	\item Reduced crosstalk interference: In spread-spectrum systems, crosstalk interference is greatly attenuated due to the processing gain of the spread spectrum system as described earlier. The effect of the suppressed crosstalk interference can be essentially removed with digital processing where noise below certain threshold results in negligible bit errors.
+	\item Better signal quality/data integrity and less static noise: Due to the processing gain and digital processing nature of spread spectrum technology, a spread-spectrum-based system is more immune to interference and noise.
+	\item Lowered susceptibility to multipath fading: Because of its inherent frequency diversity properties a spread spectrum system is much less susceptible to multipath fading.
+	\item Inherent security: In a spread spectrum system, a PN sequence is used to either modulate the signal in the time domain DSSS systems or select the carrier frequency FHSS systems. Due to the pseudo-random nature of the PN sequence, the signal in the air has been "randomized". Only the receiver having the exact same pseudo-random sequence and synchronous timing can de-spread and retrieve the original signal.
+	\item Co-existence: A spread spectrum system is less susceptible to interference than other non-spread spectrum systems. In addition, with the proper designing of pseudo-random sequences, multiple spread spectrum systems can co-exist without creating severe interference to other systems.
+	\item Longer operating distances: A spread spectrum device operated in the ISM band is allowed to have higher transmitted power due to its non-interfering nature. Because of the higher transmit power the operating distance of such a device can be significantly longer than that of a traditional analog wireless communication device.
+	\item Hard to detect: Since the communication band is spread, it can be transmitted at a low power without being detrimentally by background noise.
+	\item Hard to intercept or demodulate: The very foundation of the spreading technique is the code use to spread the signal. Without knowing the code it is impossible to decipher the transmission.
+	\item Harder to jam: T the wider the input signal, the less its effect on the system because the power density of the signal after processing is lower, and less power falls in the band pass filter.
+\end{enumerate}
+
 \chapter{Electronic components}
 
 \section{Transmitter}
